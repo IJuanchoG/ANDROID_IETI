@@ -1,5 +1,6 @@
 package edu.eci.ieti.locaine.ieti.di
 
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -18,7 +19,7 @@ import javax.inject.Singleton
 abstract class RepositoryModule {
 
     @Singleton
-    @Provides
+    @Binds
     abstract fun userRepository(repo:UserRepositoryImp) : UserRepository
 
 
