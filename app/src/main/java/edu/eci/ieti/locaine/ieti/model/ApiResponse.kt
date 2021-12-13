@@ -8,4 +8,5 @@ data class Results(
     val name: UserName?,
     val location: UserLocation?,
     val picture: UserPicture?,
+    val userLocaine: UserLocaine?,
 )

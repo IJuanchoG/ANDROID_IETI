@@ -22,12 +22,14 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.ViewModel
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import coil.compose.rememberImagePainter
 import com.valentinilk.shimmer.shimmer
 import dagger.hilt.android.AndroidEntryPoint
 import edu.eci.ieti.locaine.ieti.model.User
 import edu.eci.ieti.locaine.ieti.ui.theme.IETITheme
+import edu.eci.ieti.locaine.ieti.viewModel.UserViewModel
 
 
 @AndroidEntryPoint
@@ -179,9 +181,9 @@ fun LoadingCard() {
 fun ImageLoading(){
     Box(modifier = Modifier.shimmer()){
         Box( modifier =
-            Modifier
-                    .size((50.dp))
-                    .background(Color.LightGray)
+        Modifier
+            .size((50.dp))
+            .background(Color.LightGray)
         )
     }
 }

@@ -10,6 +10,8 @@ data class User (
     @ColumnInfo(name="lastName") val lastName: String,
     @ColumnInfo(name="city") val city: String,
     @ColumnInfo(name="thumbnail") val thumbnail: String,
+    @ColumnInfo(name="email") val mail:String,
+    @ColumnInfo(name="password") val password:String,
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
 )
 

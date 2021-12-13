@@ -1,4 +1,4 @@
-package edu.eci.ieti.locaine.ieti
+package edu.eci.ieti.locaine.ieti.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
